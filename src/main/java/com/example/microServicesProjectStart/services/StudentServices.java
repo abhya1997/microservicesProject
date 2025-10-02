@@ -1,5 +1,7 @@
 package com.example.microServicesProjectStart.services;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -24,6 +26,10 @@ public class StudentServices {
 		student.setPassword(studentDto.getPassword());
 		student.setUsername(studentDto.getUsername());
 		return student;
+	}
+	
+	public List<Student>allStudent(){
+		return studentRepo.findAll();
 	}
 	
 
