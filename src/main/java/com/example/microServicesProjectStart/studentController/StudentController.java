@@ -28,9 +28,11 @@ public class StudentController {
 	public String test() {
 		return "Tested";
 	}
-	public String dev() {
-		return "Dev";
+	public String devops() {
+		return "";
 	}
-	
+	public double randomgenereated() {
+		return Math.random();
+	}
 
 }
