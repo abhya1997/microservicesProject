@@ -28,6 +28,12 @@ public class StudentController {
 	public String test() {
 		return "Tested";
 	}
+<<<<<<< HEAD
+=======
+	public String dev() {
+		return "Dev";
+	}
+>>>>>>> 023e31b5b79f18f7c0792aa30853921e666ad5a2
 	
 
 }
