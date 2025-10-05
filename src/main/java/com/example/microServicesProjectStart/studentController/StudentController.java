@@ -1,12 +1,9 @@
 package com.example.microServicesProjectStart.studentController;
 
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -23,16 +20,14 @@ public class StudentController {
 	
 	
 	@PostMapping("/saveStudent")
-	public ResponseEntity<Student>saveStudent(@RequestBody  StudentDto studentDto){
+	public ResponseEntity<Student>saveStudent(StudentDto studentDto){
 		return ResponseEntity.status(HttpStatus.CREATED).body(studentServices.saveStudent(studentDto));
 	}
 	
-	public ResponseEntity<List<Student>>allStudent(){
-		return ResponseEntity.status(HttpStatus.OK).body(studentServices.allStudent());
+	
+	public String test() {
+		return "Tested";
 	}
-	
-	
-	
 	
 
 }
