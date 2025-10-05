@@ -31,5 +31,8 @@ public class StudentController {
 	public String devops() {
 		return "";
 	}
+	public double randomgenereated() {
+		return Math.random();
+	}
 
 }
