@@ -25,7 +25,12 @@ public class StudentController {
 	}
 	
 	
-	
+	public String test() {
+		return "Tested";
+	}
+	public String dev() {
+		return "Dev";
+	}
 	
 
 }
